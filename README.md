@@ -51,49 +51,56 @@ To run the tests with Pytest, execute the following command:
 This will run the unit tests defined in the tests.py file.
 
 Code Structure
+
     Important Files:
+        
         kaggle.py: Contains the main ETL code (extraction, transformation, and loading).
         tests.py: File with unit tests to verify the integrity of the code and data.
         requirements.txt: Lists the project dependencies (pandas and pytest).
         .gitignore: File to ignore unwanted files in version control, such as temporary files or the venv directory.
 
 ETL Functionality
+    
     Extract Phase
         The extraction function loads data from the Kaggle-provided CSV datasets (downloaded previously).
         Uses pandas to read CSV files.
+    
     Transform Phase
         The transformation phase includes data cleaning, such as removing null values, transforming some columns, and merging terrorism data with country information.
+    
     Load Phase
         The transformed data is written to a new CSV file.
         The load function ensures that the data is readable and well-formatted for other processes or analyses.
+    
     Testing
         The project includes automated tests to ensure that the ETL functionality is working correctly.
+    
     Version Control with Git
         The project code is under version control with Git. Below are the basic commands to manage the repository.
         
     Basic Git Commands
         Add files to the repository:
 
-            ```bash
-            git add .
-            ```
-            
+        ```bash
+        git add .
+        ```
+
         Commit changes:
 
-            ```bash
-            git commit -m "Commit message"
-            ```
+        ```bash
+        git commit -m "Commit message"
+        ```
         
         Push changes to the remote repository:
 
-            ```bash
-            git push origin master
-            ```
+        ```bash
+        git push origin master
+        ```
             
         Create a new branch:
 
-            ```bash
-            git checkout -b <branch_name>
-            ```
+        ```bash
+        git checkout -b <branch_name>
+        ```
 
 This README provides an overview of your project, how to set it up, run it, and test it. It also covers basic Git usage.
