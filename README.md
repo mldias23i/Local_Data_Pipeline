@@ -21,29 +21,32 @@ It is recommended to use a virtual environment to ensure that dependencies are m
 
 With virtualenv:
 
-```bash
-# Install virtualenv
-python3 -m venv <virtual_environment_name>
+    ```bash
+    # Install virtualenv
+    python3 -m venv <virtual_environment_name>
 
-# Create a new virtual environment
-source <virtual_environment_name>/bin/activate
+    # Create a new virtual environment
+    source <virtual_environment_name>/bin/activate
 
-# Install dependencies
-pip install -r requirements.txt
+    # Install dependencies
+    pip install -r requirements.txt
+    ```
 
 ### 2. Running the Pipeline
 After setting up the environment, you can run the pipeline with the following command:
 
-```bash
-python kaggle.py
+    ```bash
+    python kaggle.py
+    ```
 
 The code will extract the data, transform it, and save the results in a CSV file.
 
 ### 3. Running the Tests
 To run the tests with Pytest, execute the following command:
 
-```bash
-pytest tests.py
+    ```bash
+    pytest tests.py
+    ```
 
 This will run the unit tests defined in the tests.py file.
 
@@ -74,19 +77,23 @@ ETL Functionality
 
         Basic Git Commands
             Add files to the repository:
-                ```bash
+```bash
                 git add .
+```
             
             Commit changes:
-                ```bash
+```bash
                 git commit -m "Commit message"
+```
         
             Push changes to the remote repository:
-                ```bash
+```bash
                 git push origin master
+```
             
             Create a new branch:
-                ```bash
+```bash
                 git checkout -b <branch_name>
-                
+```
+
 This README provides an overview of your project, how to set it up, run it, and test it. It also covers basic Git usage.
