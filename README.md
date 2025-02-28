@@ -49,6 +49,40 @@ To run the tests with Pytest, execute the following command:
     ```
 
 This will run the unit tests defined in the tests.py file.
+To ensure code quality, this project uses tox for automated testing. Tox helps create isolated environments and runs tests across different Python versions.
+To enforce testing before every commit, you can set up a Git pre-commit hook:
+
+    Navigate to the project's root directory:
+
+    ```bash
+    cd path/to/repo
+    ```
+
+    Create a pre-commit hook in .git/hooks/:
+
+    ```bash
+    nano .git/hooks/pre-commit
+    ```
+
+    Add the following script:
+
+    ```bash
+    #!/bin/bash
+    echo "Running tests before commit..."
+    tox
+    if [ $? -ne 0 ]; then
+        echo "Tests failed! Commit aborted."
+        exit 1
+    fi
+    ```
+
+    Make the script executable:
+
+    ```bash
+    chmod +x .git/hooks/pre-commit
+    ```
+
+Now, in every commit, tox will run the tests. If they fail, the commit will be blocked until the issues are fixed.
 
 Code Structure
 
