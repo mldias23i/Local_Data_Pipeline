@@ -29,7 +29,7 @@ def drop_columns_with_high_nan(data, threshold=0.9):
 
 # Fuction to do some transformations and cleaning to the dataset world-data-2023
 def cleaning_world_data(world_data):
-    world_data.drop_duplicates()   
+    world_data.drop_duplicates(inplace=True)   
     #Filling some NaN values with 'Unkown' or 0 
     world_data.fillna({'Capital/Major City': 'Unknown', 'Gasoline Price': 'Unknown'}, inplace=True)
     #Converting percentage values to decimal
