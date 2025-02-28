@@ -103,4 +103,4 @@ ETL Functionality
         git checkout -b <branch_name>
         ```
 
-This README provides an overview of your project, how to set it up, run it, and test it. It also covers basic Git usage.
+This README provides an overview of the project, how to set it up, run it, and test it. It also covers basic Git usage.
