@@ -49,6 +49,7 @@ To run the tests with Pytest, execute the following command:
     ```
 
 This will run the unit tests defined in the tests.py file.
+
 To ensure code quality, this project uses tox for automated testing. Tox helps create isolated environments and runs tests across different Python versions.
 To enforce testing before every commit, you can set up a Git pre-commit hook:
 
